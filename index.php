@@ -92,7 +92,7 @@ if ($resultadoLibros && mysqli_num_rows($resultadoLibros) > 0) {
             <p class="card-text"><strong>Stock:</strong> <?php echo $libro['stock']; ?></p>
             <div class="row-md-4">
                 <button class="btn mt-auto" id="nav">Ver más</button>
-                <button class="btn mt-auto" type="submit" onclick="agregar(<?php echo $libro['ID']; ?>)">Agregar al carrito</button>
+                <button class="btn mt-auto" id="nav" type="submit" onclick="agregar(<?php echo $libro['ID']; ?>)">Agregar al carrito</button>
             </div>
         </div>
     </div>
